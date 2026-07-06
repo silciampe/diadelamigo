@@ -28,8 +28,9 @@ export function Welcome({ onBegin }: WelcomeProps) {
 
           <FadeSlide className="mt-14 sm:mt-16">
             <GentleButton
+              variant="ghost"
               onClick={onBegin}
-              className="min-h-11 px-2 text-sm sm:text-base"
+              className="min-h-12 min-w-36 bg-cream-dark/60 px-10 py-3 text-base text-ink shadow-[0_1px_2px_rgba(0,0,0,0.04)] hover:bg-cream-dark sm:min-w-40"
             >
               Comenzar
             </GentleButton>

@@ -15,14 +15,14 @@ export const friends: Friend[] = [
     name: 'PAME',
     photoUrl: '/photos/pame.jpg',
     message:
-      'Allá desde las alturas… para mí como dos metros y medio… con su templanza siempre a cuestas, su mirada distante y sus ojos celestes comiéndose el mundo. Allá arriba mantiene toda su manada atenta, a veces hasta raspa los límites de lo lógico… pero si estás de su lado… estás a salvo y cuando viene y te da un abrazo y un beso se le va toda la templanza a la mierda, porque aparece toda esa ternura que viene negándole al mundo allá en lo alto para ir juntándola y regalartela en un gesto que te abraza también el alma… y sobre todo te hace sentir segura, que si estás entre las personas que ella eligió va a dejar todo lo que tiene para cuidarte y quererte. Estás a salvo… fuiste una de las elegidas.',
+      'Allá desde las alturas… para mí como dos metros y medio… con su templanza siempre a cuestas, su mirada distante y sus ojos celestes comiéndose el mundo. Allá arriba mantiene toda su manada atenta, a veces hasta raspa los límites de lo lógico… pero si estás de su lado… estás a salvo y cuando viene y te da un abrazo y un beso se le va toda la templanza a la mierda, porque aparece toda esa ternura que viene negándole al mundo para ir juntándola y regalártela en un gesto que te abraza también el alma… y sobre todo te hace sentir segura, que si estás entre las personas que ella eligió va a dejar todo lo que tiene para cuidarte y quererte. Estás a salvo… fuiste una de las elegidas.',
   },
   {
     id: 'ana',
     name: 'ANA',
     photoUrl: '/photos/ana.jpg',
     message:
-      'Se hace la ignorante… la que no sabe… pero la tiene taaaan clara, ella aprendió a los golpes pero se levantó con los guantes de boxeo para enfrentarse a todo con un saco de humildad pero con la piel de la sabiduría de alguien que sabe algo que el resto no… y su picardía… mejor no tener la boca con agua (o cualquier líquido) cuando ella habla porque es probable que termine saliendo cual catarata de tu boca.. porque una palabra de la boca de Ana es una explosión en tu cerebro de no poder creer escuchar lo que estás escuchando.. pero Anita si… te lo tira así sin filtros para que todas estallemos en risas que nos elevan a un nivel que no nos importa realmente quien está al lado… simplemente porque nos olvidamos del resto.',
+      'Se hace la ignorante… la que no sabe… pero la tiene taaaan clara, ella aprendió a los golpes pero se levantó con los guantes de boxeo para enfrentarse a todo con un saco de humildad pero con la piel de la sabiduría de alguien que sabe algo que el resto no… y su picardía… mejor no tener la boca con agua (o cualquier líquido) cuando ella habla porque es probable que termine saliendo cual catarata.. porque una palabra de la boca de Ana es una explosión en tu cerebro de no poder creer escuchar lo que estás escuchando.. pero Anita si… te lo tira así sin filtros para que todas estallemos en risas que nos elevan a un nivel que no nos importa realmente quien está al lado… simplemente porque nos olvidamos del resto.',
   },
   {
     id: 'lu',
@@ -43,7 +43,7 @@ export const friends: Friend[] = [
     name: 'GABI',
     photoUrl: '/photos/gabi.jpg',
     message:
-      'La sordera selectiva hace que hable más de lo que le escucha y es por eso que todo el tiempo la acompañamos en sus pensamientos porque con nosotras (al menos) piensa en voz alta, nos sumergimos en un ida y vuelta de opciones e ideas, pensamos todas con ella. La mujer de los contactos, la que siempre conoce a alguien que te conoce pero con un manejo estratégico de los cuidados de todos. La que te deja en claro que si te puede ayudar lo va a hacer.',
+      'La sordera selectiva hace que hable más de lo que escucha y es por eso que todo el tiempo la acompañamos en sus pensamientos porque con nosotras (al menos) piensa en voz alta, nos sumergimos en un ida y vuelta de opciones e ideas, pensamos todas con ella. La mujer de los contactos, la que siempre conoce a alguien que te conoce pero con un manejo estratégico de los cuidados de todos. La que te deja en claro que si te puede ayudar lo va a hacer.',
   },
   {
     id: 'yani',
