@@ -1,0 +1,64 @@
+@import 'tailwindcss';
+
+@theme {
+  --font-sans: 'Inter', system-ui, sans-serif;
+  --font-serif: 'Cormorant Garamond', Georgia, serif;
+
+  --color-cream: #faf9f7;
+  --color-cream-dark: #f3f1ed;
+  --color-ink: #1a1a1a;
+  --color-ink-muted: #6b6b6b;
+  --color-ink-faint: #a8a8a8;
+  --color-warm: #c4a882;
+  --color-warm-light: #e8ddd0;
+  --color-warm-glow: rgba(196, 168, 130, 0.15);
+
+  --ease-gentle: cubic-bezier(0.25, 0.1, 0.25, 1);
+  --duration-slow: 500ms;
+  --duration-slower: 800ms;
+}
+
+@layer base {
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    margin: 0;
+    min-height: 100dvh;
+    background-color: var(--color-cream);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    font-weight: 300;
+    line-height: 1.6;
+    overflow-x: hidden;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  #root {
+    min-height: 100dvh;
+  }
+
+  ::selection {
+    background-color: var(--color-warm-light);
+    color: var(--color-ink);
+  }
+}
+
+@layer utilities {
+  .font-serif {
+    font-family: var(--font-serif);
+  }
+
+  .text-balance {
+    text-wrap: balance;
+  }
+}
