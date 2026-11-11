@@ -5,9 +5,10 @@ import { MinimalBackground } from '@/components/ui/MinimalBackground'
 
 interface WelcomeProps {
   onBegin: () => void
+  onBack: () => void
 }
 
-export function Welcome({ onBegin }: WelcomeProps) {
+export function Welcome({ onBegin, onBack }: WelcomeProps) {
   return (
     <FullScreen>
       <MinimalBackground />
@@ -26,7 +27,7 @@ export function Welcome({ onBegin }: WelcomeProps) {
             </h1>
           </FadeSlide>
 
-          <FadeSlide className="mt-14 sm:mt-16">
+          <FadeSlide className="mt-14 flex flex-col items-center gap-6 sm:mt-16">
             <GentleButton
               variant="ghost"
               onClick={onBegin}
@@ -34,6 +35,7 @@ export function Welcome({ onBegin }: WelcomeProps) {
             >
               Comenzar
             </GentleButton>
+            <GentleButton onClick={onBack}>Volver a la portada</GentleButton>
           </FadeSlide>
         </FadeSlideGroup>
       </div>

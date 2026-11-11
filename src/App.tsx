@@ -1,17 +1,40 @@
-import { AnimatePresence } from 'framer-motion'
-import { useCallback, useMemo } from 'react'
+import { AnimatePresence, motion } from 'framer-motion'
+import { useCallback, useMemo, useState } from 'react'
+import { Cover } from '@/components/Cover/Cover'
 import { Ending } from '@/components/Ending/Ending'
 import { FinalCard } from '@/components/FinalCard/FinalCard'
 import { FriendCard } from '@/components/FriendCard/FriendCard'
 import { FriendPhoto } from '@/components/FriendPhoto/FriendPhoto'
 import { Gallery } from '@/components/Gallery/Gallery'
 import { GroupPhoto } from '@/components/GroupPhoto/GroupPhoto'
+import { LaElegida } from '@/components/LaElegida/LaElegida'
 import { Particles } from '@/components/Particles/Particles'
 import { Welcome } from '@/components/Welcome/Welcome'
+import { DURATION, EASE } from '@/constants/animations'
 import { endingMessage, finalCard, friends, galleryFriends, groupPhoto, SIL_ID } from '@/data/friends'
 import { useExperienceState } from '@/hooks/useExperienceState'
 
+type Page = 'cover' | 'dia' | 'elegida'
+
 export default function App() {
+  const [page, setPage] = useState<Page>('cover')
+
+  return (
+    <AnimatePresence mode="wait">
+      {page === 'cover' && (
+        <Cover
+          key="cover"
+          onDiaDelAmigo={() => setPage('dia')}
+          onLaElegida={() => setPage('elegida')}
+        />
+      )}
+      {page === 'elegida' && <LaElegida key="elegida" onBack={() => setPage('cover')} />}
+      {page === 'dia' && <DiaDelAmigo key="dia" onBack={() => setPage('cover')} />}
+    </AnimatePresence>
+  )
+}
+
+function DiaDelAmigo({ onBack }: { onBack: () => void }) {
   const {
     currentScreen,
     selectedFriendId,
@@ -74,12 +97,18 @@ export default function App() {
   }, [resetSelection, setScreen])
 
   return (
-    <div className="relative min-h-dvh bg-cream">
+    <motion.div
+      className="relative min-h-dvh bg-cream"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: DURATION.normal, ease: EASE }}
+    >
       {currentScreen !== 'welcome' && currentScreen !== 'ending' && <Particles count={14} />}
 
       <AnimatePresence mode="wait">
         {currentScreen === 'welcome' && (
-          <Welcome key="welcome" onBegin={() => setScreen('gallery')} />
+          <Welcome key="welcome" onBegin={() => setScreen('gallery')} onBack={onBack} />
         )}
 
         {currentScreen === 'gallery' && (
@@ -138,6 +167,6 @@ export default function App() {
           />
         )}
       </AnimatePresence>
-    </div>
+    </motion.div>
   )
 }

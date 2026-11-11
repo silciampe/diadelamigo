@@ -3,6 +3,7 @@
 @theme {
   --font-sans: 'Inter', system-ui, sans-serif;
   --font-serif: 'Cormorant Garamond', Georgia, serif;
+  --font-hand: 'Caveat', cursive;
 
   --color-cream: #faf9f7;
   --color-cream-dark: #f3f1ed;
@@ -56,6 +57,10 @@
 @layer utilities {
   .font-serif {
     font-family: var(--font-serif);
+  }
+
+  .font-hand {
+    font-family: var(--font-hand);
   }
 
   .text-balance {
