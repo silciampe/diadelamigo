@@ -44,16 +44,25 @@ La que nunca bajó los brazos, la q construyó una familia hermosa.
 Por esto y mucho más sos la elegida. 
 Te quiero muchísimo Ani! Gracias por dejarme entrar en tu vida.`,
   },
-  { id: 'yani', name: 'Yani', photoUrl: '/mina/yani.png', message: '' },
+  {
+    id: 'yani',
+    name: 'Yani',
+    photoUrl: '/mina/yani.png',
+    message: `Te elijo por tu gran sentido del humor, esa capacidad que tenés de hacernos reír,  alegrarnos los días con tus comentarios y tus palabras cambiadas (el famoso bull dog en lugar de bird dog por poner sólo un ejemplo); te elijo porque estás siempre cuidando a los que te rodeamos, mimando con alguna comida rica, ofreciendo hacer unas doscientas empanadas para un cumple aún cuando ni pensaste en qué momento las vas a hacer; te elijo porque le das para adelante en la vida, porque sos imparable, arremetida y a la vez muy sensible…muy QUERIBLE! mi amiga ANA`,
+  },
   {
     id: 'eve',
     name: 'Eve',
     photoUrl: '/mina/eve.png',
-    message: `Anita querida!! Debajo de esa armadura, hay una persona increíble, generosa, amorosa, resiliente, con muchos rulos y con un drive tremendo... de esos que ese aprende cuando te toca sacar muchas pelotas difíciles de la cancha. 
-Sos esa chispa que nos hace estallar de risa con tus ocurrencias, que siempre tiene una sonrisa en el rostro, de esas que contagian y hacen los días más alegres.
-Sos la tía del grupo, esa que siempre tiene lugar para un sobrino más y a la que a veces le cuesta levantar la mano para pedir ayuda, pero en el fondo sabe que que tiene amigas que están para eso y más.
+    message: `Anita querida!! 
+Cómo no te voy a elegir, si vi lo que hay debajo de esa armadura…
+Una persona increíble, generosa, amorosa, resiliente, con muchos rulos y con un drive tremendo... de esos que se aprenden cuando te toca sacar muchas pelotas difíciles de la cancha.
+
+Sos esa chispa que nos hace estallar de risa con tus ocurrencias, que siempre tiene una sonrisa en el rostro, de esas que contagian y hacen los días más alegres. Sos la tía del grupo, esa que siempre tiene lugar para un sobrino más y a la que a veces le cuesta levantar la mano para pedir ayuda, pero en el fondo sabe que tiene amigas que están para eso y más.
+
 Y aunque lo quiera disimular, su corazón gigante es más fuerte que ella, y se nota.
-Que suerte la mía de cruzarte en esta cancha de la vida. Te quiero mucho! 💜`,
+
+Qué suerte la mía de cruzarte en esta cancha de la vida. Te elijo para una amistad para siempre. Te quiero mucho! 💜`,
   },
   {
     id: 'silvina',
